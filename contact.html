@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr"> <!-- dili tr yani türkçe olarak değiştirdik -->
+<head><!-- head kısmı sadece browser'ı ilgilendirir -->
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Zehra Betül</title> <!-- title kısmı browser'da gözüküyor -->
+   <style>
+        /* CSS kodları başlangıç */
+        body{
+            background: url(img/andrew-ridley-jR4Zf-riEjI-unsplash.jpg);
+            height: 4000px;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        header{
+            background-color: #554994cf
+        }
+        .navbar{
+            width: 100%;
+            height: 90px;
+            display: flex;
+        }
+        .navbar ul{
+            float: right;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .navbar ul li{
+            display: inline-block;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        .navbar ul li a{
+            float: right;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 22px;
+            color: #FFCCB3;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: #2c254e;
+            border-radius: 20%;
+        }
+        .navbar ul li a:hover{
+            background-color: #f29393a7;
+            transition: 0.3s;
+        }
+        .navbar ul li a.active{
+            background-color: #ff5555;
+        }
+        section{
+            transform: translate(-50%-50%);
+            font-family: 'Times';
+            user-select: none;
+            text-align: center;
+        }
+        .baslik{
+            font-size: 60px;
+            text-shadow: 3px 4px #ffab82;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #2c254e;
+        }
+        .yazi{
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #000000;
+        }
+        footer p{
+            background-color: #55499466;
+            position:fixed;
+            width: 100%; 
+            height: 60px; 
+            bottom:0px;
+        }
+        
+        /* CSS kodları bitiş */
+   </style>
+</head>
+<body>
+   <!-- Navbar - Start -->
+   <header> <!-- body içerisindeki başlık kısmı -->
+       <nav class="navbar">
+           <ul>
+               <li>
+                   <a href="index.html">Ana Sayfa</a>
+               </li>
+               <li>
+                   <a href="about-us.html">Hakkımda</a>
+               </li>
+               <li>
+                   <a href="contact.html">İletişim</a>
+               </li>
+           </ul>
+       </nav>
+   </header>
+   <!-- Navbar - End -->
+
+   <!-- Content - Start -->
+   <section> <!-- div diyerek genel bir isimle de bu yapıları oluşturabiliriz -->
+       <!-- Articles - Start -->
+       <article>
+           <h2 class="baslik">İletişim</h2>
+            <p class="yazi">
+                Mail Adresi : <a href="mailto:email@gmail.com">email@gmail.com</a> <br>
+                Telefon : <a href="tel:">0555 555 55 55</a>
+            </p>
+           <hr>
+       </article>
+   </section>
+   <!-- Content - Start -->
+
+   <!-- Footer - Start -->
+   <footer>
+       <p>Adres: Türkiye</p>
+   </footer>
+   <!-- Footer - Start -->
+</body>
+</html>

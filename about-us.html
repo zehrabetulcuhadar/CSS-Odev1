@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr"> <!-- dili tr yani türkçe olarak değiştirdik -->
+<head><!-- head kısmı sadece browser'ı ilgilendirir -->
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Zehra Betül</title> <!-- title kısmı browser'da gözüküyor -->
+   <style>
+        /* CSS kodları başlangıç */
+        body{
+            background: url(img/andrew-ridley-jR4Zf-riEjI-unsplash.jpg);
+            height: 4000px;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        header{
+            background-color: #554994cf
+        }
+        .navbar{
+            width: 100%;
+            height: 90px;
+            display: flex;
+        }
+        .navbar ul{
+            float: right;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .navbar ul li{
+            display: inline-block;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        .navbar ul li a{
+            float: right;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 22px;
+            color: #FFCCB3;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: #2c254e;
+            border-radius: 20%;
+        }
+        .navbar ul li a:hover{
+            background-color: #f29393a7;
+            transition: 0.3s;
+        }
+        .navbar ul li a.active{
+            background-color: #ff5555;
+        }
+        section{
+            top: 10%;
+            left: 5%;
+            right: 5%;
+            position: absolute;
+            transform: translate(-50%-50%);
+            font-family: 'Times';
+            user-select: none;
+        }
+        .baslik{
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #2c254e;
+        }
+        .yazi{
+            background-color: rgba(255, 238, 208, 0.785);
+            border-radius: 10px;
+            font-size: 22px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #463b80;
+        }
+        .giris{
+            font-size: 25px;
+        }
+        #benkimim{
+            font-size: 50px;
+            text-shadow: 3px 4px #ffab82;
+        }
+        img{
+            max-width: 30%;
+            height: auto;
+            border: 2px;
+        }
+        footer p{
+            background-color: #55499466;
+            position:fixed;
+            width: 100%; 
+            height: 60px; 
+            bottom:0px;
+        }
+        
+        /* CSS kodları bitiş */
+   </style>
+</head>
+<body>
+   <!-- Navbar - Start -->
+   <header> <!-- body içerisindeki başlık kısmı -->
+       <nav class="navbar">
+           <ul>
+               <li>
+                   <a href="index.html">Ana Sayfa</a>
+               </li>
+               <li>
+                   <a href="about-us.html">Hakkımda</a>
+               </li>
+               <li>
+                   <a href="contact.html">İletişim</a>
+               </li>
+           </ul>
+       </nav>
+   </header>
+   <!-- Navbar - End -->
+
+   <!-- Content - Start -->
+   <section> <!-- div diyerek genel bir isimle de bu yapıları oluşturabiliriz -->
+       <!-- Articles - Start -->
+       <article>
+           <h2 class="baslik" id="benkimim">Ben Kimim ?</h2>
+            <p class="yazi giris">Ben <strong>Zehra Betül.</strong> Bilgisayar mühendisliği öğrencisiyim. Kendimi geliştirmek için patikaya katıldım...</p>
+           <hr>
+       </article>
+       <article>
+        <h2 class="baslik">Sevdiğim Filmlerden Bazıları : </h2>
+        <ul>
+            <li><img src="img/wp9510585-laptop-avengers-4k-wallpapers.jpg" alt="Avengers"></li>
+            <li><img src="img/MDTFW0j-pirates-of-the-caribbean-wallpapers.jpg" alt="PoC"></li>
+            <li><img src="img/wp5593826-harry-potter-laptop-wallpapers.jpg" alt=""></li>
+        </ul>
+        <hr>
+    </article>
+   </section>
+   <!-- Content - Start -->
+
+   <!-- Footer - Start -->
+   <footer>
+       <p>Adres: Türkiye</p>
+   </footer>
+   <!-- Footer - Start -->
+</body>
+</html>
